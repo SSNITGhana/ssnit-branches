@@ -3,6 +3,8 @@ A repo for the Realm database of SSNIT Branches used by SSNIT's mobile app.
 
 This repo contains a folder of all of the SSNIT branch databases used, old and new, and a json file pointing the app to the most current one to update to.
 
+To make changes to this repo (or to test it), you should use the `dev-testing` branch and only make the changes in master branch when everything works (to prevent affecting live builds).
+
 ## Steps for Updating
 The process for updating all live builds of the app with a new SSNIT branch database is very simple:
 
