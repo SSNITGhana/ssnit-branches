@@ -1,5 +1,5 @@
 {
-    "currentDatabaseVersion": 1,
-    "currentDatabaseName": "SSNIT branches v1",
-    "currentDatabaseURL": "https://github.com/SSNITGhana/ssnit-branches/blob/dev-testing/databases/SSNIT%20branches%20v1.realm?raw=true"
+    "currentDatabaseVersion": 2,
+    "currentDatabaseName": "SSNIT branches v2 with White House",
+    "currentDatabaseURL": "https://github.com/SSNITGhana/ssnit-branches/blob/dev-testing/databases/SSNIT%20branches%20v2%20(contains%20White%20House%20Coords).realm?raw=true"
 }
