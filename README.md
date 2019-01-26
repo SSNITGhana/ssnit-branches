@@ -2,3 +2,12 @@
 A repo for the Realm database of SSNIT Branches used by SSNIT's mobile app.
 
 This repo contains a folder of all of the SSNIT branch databases used, old and new, and a json file pointing the app to the most current one to update to.
+
+## Steps for Updating
+The process for updating all live builds of the app with a new SSNIT branch database is very simple:
+
+1. Download the most current database form the `databases` folder
+2. Make your changes to the database (probably using Realm Studio), but do not rename fields or add new ones— ⚠️ **This will break production on all live builds!** ⚠️ If you want to make any of those types of updates, you'll need to make a proper update of the app (and remember to increase the `schemaVersion` in the `Realm.open` command used in the branch module (that'll be in `MainBranchPage.js`)).
+3. Upload the new database to the `databases` folder under a unique name. There's no need to remove the older databases in the folder.
+4. Update the `current-database.json` file with the correct URL to this new database, as well as a name for this database. This name doesn't necessarily have to be the same as the database file; it's just the file name the app will use when saving the datbase. Make sure this name is unique and hasn't been used before.
+5. Increment the `currentDatabaseVersion` in the `current-database` json.
